@@ -12,9 +12,9 @@ This repository includes projects using lidr, terra, tidyverse packages in R for
   - Extract point clouds for plot locations listed in Plot_Table.csv and calculate metrics for each plot
   - Develop statistical models between lidar metrics, toal AGB and dominant tree height
 
-# 2. Individual tree detection using lidR
+# 2. Individual tree detection using lidR for Malcolm Knapp Research Forest (MKRF)
 - Dataset
-  - 20 .las tiles for Malcolm Knapp Research Forest (MKRF) were used (MKRF\LAS\). The lidar data was collected over the Malcolm Knapp Research Forest (MKRF) in Maple Ridge, BC. This data was collected in May 2010 by a discrete return sensor with an approximate point density of 3.1 returns / m2.
+  - 20 .las tiles for MKRF were used (MKRF\LAS\). The lidar data was collected over the Malcolm Knapp Research Forest (MKRF) in Maple Ridge, BC. This data was collected in May 2010 by a discrete return sensor with an approximate point density of 3.1 returns / m2.
   - MKRF_Plots.csv (MKRF\) shows four plot locations for this project.
 
 - Main steps
