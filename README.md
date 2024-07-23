@@ -3,7 +3,7 @@ This repository includes projects using lidr, terra, tidyverse packages in R for
 
 # 1. A suite of lidar products for Alex Fraser Research Forest (AFRF)
 - Dataset
-  - 24 .las tiles for the AFRF were used (under AFRF\LAS\ folder). These data were collected in 2008 with a discrete return sensor. The point density is approximately 3 returns / m2. Fixed-radius plot data were collected between 1997-2010 across our study area, with an approximate radius of 10 m for each plot. Individual tree measurements were made, allowing for the calculation of total above ground biomass (AGB), dominant tree height, and other attributes of interest.
+  - 24 .las tiles for the AFRF were used (AFRF\LAS\). These data were collected in 2008 with a discrete return sensor. The point density is approximately 3 returns / m2. Fixed-radius plot data were collected between 1997-2010 across our study area, with an approximate radius of 10 m for each plot. Individual tree measurements were made, allowing for the calculation of total above ground biomass (AGB), dominant tree height, and other attributes of interest.
   - The table Plot_Table.csv (AFRF\Plots\) contains plot ids, plot locations (X and Y), and estimates of our two attributes: total AGB (kg/ha) and dominant tree height (m).
   - The RGB Aerial Photo of AFRF (AFRF\Aerial_Photo\) is also avaible for reference.
 
@@ -14,10 +14,12 @@ This repository includes projects using lidr, terra, tidyverse packages in R for
 
 # 2. Individual tree detection using lidR for Malcolm Knapp Research Forest (MKRF)
 - Dataset
-  - 20 .las tiles for MKRF were used (MKRF\LAS\). The lidar data was collected over the Malcolm Knapp Research Forest (MKRF) in Maple Ridge, BC. This data was collected in May 2010 by a discrete return sensor with an approximate point density of 3.1 returns / m2.
+  - 20 .las tiles for MKRF were used (MKRF\Normalized\). The lidar data was collected over the Malcolm Knapp Research Forest (MKRF) in Maple Ridge, BC. This data was collected in May 2010 by a discrete return sensor with an approximate point density of 3.1 returns / m2.
   - MKRF_Plots.csv (MKRF\) shows four plot locations for this project.
 
 - Main steps
   - Extract point clouds for each plot location and remove outliers below 0 m and above 65 m
   - Detect individual trees using a point cloud with segment_trees function and Li et al., 2012 algorithm
   - Detect individual trees using a CHM. Dalponte and Coomes 2016 algorithm was applied.
+
+Note that the actual data for AFRF and MKRF was not uploaded due to the unknown copyright restrictions.
